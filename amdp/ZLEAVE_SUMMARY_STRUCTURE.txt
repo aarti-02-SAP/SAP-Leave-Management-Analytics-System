@@ -1,0 +1,21 @@
+Structure Name: ZLEAVE_SUMMARY
+
+Component Name | Data Element     | Data Type | Length | Description
+---------------|------------------|-----------|--------|--------------------------
+EMPID          | MANDT            | CLNT      | 3      | Employee ID
+LEAVE_TYPE     | ZLEAVE_TYPE      | CHAR      | 10     | Leave Type
+TOTAL_DAYS     | INT4             | INT4      | 10     | Number of Days
+
+
+📌 How to Create This Structure in SAP (SE11)
+
+
+-> Go to transaction SE11
+
+-> Choose "Data Type" → Enter ZLEAVE_SUMMARY
+
+-> Click Create → choose Structure
+
+-> Add fields exactly as listed above
+
+-> Save and Activate
