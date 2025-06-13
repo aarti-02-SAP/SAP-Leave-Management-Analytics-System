@@ -1,0 +1,4 @@
+REQ_ID | EMP_ID | FROM_DATE  | TO_DATE    | LEAVE_TYPE | STATUS    | REQUESTED_ON | APPROVED_BY | COMMENTS
+-------|--------|------------|------------|------------|-----------|--------------|-------------|-----------------
+R001   | E001   | 01.06.2025 | 05.06.2025 | CL         | PENDING   | 25.05.2025   |             | FAMILY TRIP
+R002   | E002   | 20.05.2025 | 22.05.2025 | PL         | APPROVED  | 10.05.2025   | M002        | MEDICAL LEAVE
