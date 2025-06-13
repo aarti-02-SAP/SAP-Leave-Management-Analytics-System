@@ -1,0 +1,33 @@
+ZCDS_LEAVE_COUNT.txt
+📌 Purpose: Documentation for CDS View ZCDS_LEAVE_COUNT in your /cds/ folder.
+ZCDS_LEAVE_COUNT.txt (this metadata/documentation)
+
+
+CDS View Name    : ZCDS_LEAVE_COUNT
+SQL View Name    : ZV_LEAVECOUNT
+Description      : CDS View - Leave Count by Employee and Leave Type
+Used Table(s)    : ZLEAVE_REQUEST
+
+Annotations Used :
+------------------
+@AbapCatalog.sqlViewName: 'ZV_LEAVECOUNT'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'CDS View - Leave Count by Employee'
+
+Field Definitions :
+-------------------
+Field Name     | Source Field        | Description
+---------------|---------------------|-------------------------------
+EMPID          | ZLEAVE_REQUEST-EMPID      | Employee ID
+LEAVE_TYPE     | ZLEAVE_REQUEST-LEAVE_TYPE | Type of Leave (Casual, Sick, etc.)
+TOTAL_LEAVES   | COUNT(*) grouped by EMPID, LEAVE_TYPE | Total number of leave entries
+
+Grouping Logic :
+----------------
+GROUP BY EMPID, LEAVE_TYPE
+
+Usage :
+-------
+Used for analytics to show total leave counts per employee and leave type.
+Can be previewed in Eclipse ADT using "Open With > Data Preview".
