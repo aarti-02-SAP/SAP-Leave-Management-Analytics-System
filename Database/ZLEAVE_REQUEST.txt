@@ -1,0 +1,20 @@
+📌 Purpose: Technical documentation for the custom table ZLEAVE_REQUEST — Employee Leave Request Table
+
+Table Name: ZLEAVE_REQUEST
+Description: Employee Leave Request Table
+
+Delivery Class       : A
+Data Browser Access  : Display/Maintenance Allowed
+Data Class           : APPL0
+Size Category        : 0
+
+Field Definitions:
+------------------
+
+Field Name     | Data Element     | Data Type | Length | Key | Description
+---------------|------------------|-----------|--------|-----|-------------------------------
+EMPID          | MANDT / CHAR     | CLNT / C  | 3 or 10| Yes | Employee ID (Foreign Key to ZEMP_MASTER)
+LEAVE_TYPE     | CHAR             | CHAR      | 10     | Yes | Type of Leave (Casual/Sick)
+START_DATE     | DATS             | DATS      | 8      | Yes | Leave Start Date
+END_DATE       | DATS             | DATS      | 8      | No  | Leave End Date
+STATUS         | CHAR             | CHAR      | 10     | No  | Status (Pending/Approved/Rejected)
