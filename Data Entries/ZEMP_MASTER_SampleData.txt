@@ -1,0 +1,6 @@
+EMP_ID | NAME         | DEPARTMENT | MANAGER_ID | DOJ
+-------|--------------|------------|------------|------------
+E001   | ALICE VERMA  | HR         | M001       | 01.01.2019
+E002   | RAHUL NAIR   | IT         | M002       | 12.03.2020
+M001   | RAJESH SINGH | HR         |            | 15.04.2017
+M002   | SNEHA REDDY  | IT         |            | 09.07.2018
